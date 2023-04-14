@@ -5,6 +5,7 @@ const text = {
 };
 
 const background = {
+  grey1: '#D9D9D9',
   layer1: '#F1F4F5',
   layer2: '#E8ECF0',
   layer3: '#E0EFFF',
@@ -16,4 +17,6 @@ export const color = {
   white: '#fff',
   text,
   background,
+  pending: '#FF8A1E',
+  warning: '#FF4545',
 };

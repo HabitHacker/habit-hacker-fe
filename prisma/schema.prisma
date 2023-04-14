@@ -14,7 +14,7 @@ model Execution {
   id           String   @default(cuid()) @id
   account      String
   challengeId  String
-  count        String
+  count        Int
   imagePath    String
   imageName    String
 }

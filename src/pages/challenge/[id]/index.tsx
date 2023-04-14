@@ -4,12 +4,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
-import { Header } from "src/components/common";
+import { Header, Button } from "src/components/common";
 import { color } from "src/components/styles/colors";
 import { challengeList } from "src/dummyData";
 import LinkIcon from 'public/icons/ico-link.svg';
 import ParticipantIcon from 'public/icons/ico-participant.svg';
-import Button from "src/components/common/Button";
 
 export default function Challenge() {
   const router = useRouter();

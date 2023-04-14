@@ -6,8 +6,8 @@ import { color } from "../styles/colors";
 import LinkIcon from 'public/icons/ico-link.svg';
 import ChevronIcon from 'public/icons/ico-chevron-right-secondary.svg';
 import dayjs from "dayjs";
-import Button from "../common/Button";
 import { useRouter } from "next/router";
+import { Button } from "../common";
 
 export default function Card({
   id,
@@ -34,11 +34,11 @@ export default function Card({
             {title}
           </Text>
           <Box mt="8px" display="flex" alignItems="center">
-              <LinkIcon />
-              <Text ml="9px" fontWeight={800} fontSize="18px" lineHeight="1" color={color.text.secondary}>
-                {deposit}
-              </Text>
-            </Box>
+            <LinkIcon />
+            <Text ml="9px" fontWeight={800} fontSize="18px" lineHeight="1" color={color.text.secondary}>
+              {deposit}
+            </Text>
+          </Box>
           <Text mt="10px" fontWeight={600} lineHeight="20px" color={color.text.tertiary}>
             # {hashtags.join(', ')}
           </Text>

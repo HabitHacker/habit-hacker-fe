@@ -4,8 +4,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useRef } from 'react';
-import { Header } from 'src/components/common';
-import Button from 'src/components/common/Button';
+import { ChallengeInfo } from 'src/components/challenge';
+import { Button, Header } from 'src/components/common';
 import { color } from 'src/components/styles/colors';
 import { challengeList } from 'src/dummyData';
 
@@ -30,22 +30,7 @@ export default function Participate() {
       />
       <Box mt={16} position="relative" display="flex" flexDirection="column" flex={1} bg={color.background.layer1}>
         <Box p="28px 20px" bg={color.white}>
-          <Box display="flex">
-            <Box position="relative" width="106px" height="106px" borderRadius="15px" overflow="hidden">
-              <Image alt={challenge.title} src={challenge.image} fill objectFit="cover" />
-            </Box>
-            <Box ml="21px">
-              <Text as="h4" fontWeight={800} fontSize="20px" lineHeight="24px">
-                {challenge.title}
-              </Text>
-              <Text mt="8px" fontWeight={600} fontSize="17px" lineHeight="21px" color={color.text.tertiary}>
-                # {challenge.hashtags.join(', ')}
-              </Text>
-              <Text mt="8px" fontWeight={600} fontSize="17px" lineHeight="21px" color={color.text.tertiary}>
-                {dayjs(challenge.startDate).format('MM/DD')}-{dayjs(challenge.endDate).format('MM/DD')}
-              </Text>
-            </Box>
-          </Box>
+          <ChallengeInfo {...challenge}/>
           <Text mt="31px" fontWeight={700} fontSize="24px" lineHeight="30px">
             Deposits
           </Text>
