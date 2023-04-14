@@ -16,6 +16,9 @@ export default function Participate() {
 
   const challenge = challengeList.find(x => x.id === id);
 
+  const handleClickJoin = () => {
+    router.push('/my-challenges');
+  };
   return (
     <>
       <Head>
@@ -28,12 +31,8 @@ export default function Participate() {
       <Box mt={16} position="relative" display="flex" flexDirection="column" flex={1} bg={color.background.layer1}>
         <Box p="28px 20px" bg={color.white}>
           <Box display="flex">
-            <Box position="relative" width="106px" height="106px" borderRadius="!5px">
-              <Image
-                alt={challenge.title}
-                src={challenge.image}
-                fill
-              />
+            <Box position="relative" width="106px" height="106px" borderRadius="15px" overflow="hidden">
+              <Image alt={challenge.title} src={challenge.image} fill objectFit="cover" />
             </Box>
             <Box ml="21px">
               <Text as="h4" fontWeight={800} fontSize="20px" lineHeight="24px">
@@ -83,7 +82,7 @@ export default function Participate() {
         </Box>
         <Box mt="auto" px="20px" pb="30px">
           <Button
-            onClick={() => {}}
+            onClick={handleClickJoin}
             padding="16px 20px"
             h="fit-content"
             fontWeight="800"

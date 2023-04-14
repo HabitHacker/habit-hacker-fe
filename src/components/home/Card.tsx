@@ -4,16 +4,7 @@ import Image from "next/image";
 import { color } from "../styles/colors";
 import dayjs from "dayjs";
 import { useRouter } from "next/router";
-
-interface Props {
-  id: string;
-  deposit: number;
-  title: string;
-  image: string;
-  startDate: Date;
-  endDate: Date;
-  hashtags: Array<string>;
-};
+import { ChallengeType } from "src/types";
 
 export default function Card({
   id,
@@ -23,7 +14,7 @@ export default function Card({
   startDate,
   endDate,
   hashtags
-}: Props) {
+}: ChallengeType) {
   const router = useRouter();
   return (
     <GridItem onClick={() => router.push(`challenge/${id}`)}>

@@ -58,7 +58,7 @@ export const GlobalStyle = () => <Global
       color: ${color.text.primary};
       font-family: 'Rota', sans-serif !important;
 
-      > div {
+      > #__next {
         min-height: 100vh;
         display: flex;
         flex-direction: column;

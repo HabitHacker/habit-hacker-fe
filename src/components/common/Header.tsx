@@ -11,7 +11,7 @@ import Button from "./Button";
 interface Props {
   title: string;
   isHome?: boolean;
-  returnUrl?: string;
+  returnUrl?: string | null;
   background?: string;
 };
 
@@ -39,7 +39,18 @@ export default function Header({
       bg={background}
     >
       <Box as="nav">
-        {isHome ? <HamburgerIcon/> : <ChevronIcon onClick={() => router.push(returnUrl)} />}
+        {isHome ? 
+          <HamburgerIcon/> : 
+          <ChevronIcon 
+            onClick={() => { 
+              if (returnUrl === null) {
+                router.back();
+              } else {
+                router.push(returnUrl);
+              }
+            }} 
+          />
+        }
       </Box>
       <Box as="nav" ml="12px">
         <Text fontWeight="700" fontSize="18px" lineHeight="22px">

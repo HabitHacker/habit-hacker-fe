@@ -13,7 +13,7 @@ export default function Home() {
         <title>Challenge</title>
       </Head>
       <Header title="List" isHome />
-      <Box pt={16} bg={color.white} flex={1} overflowY="scroll" sx={{ '&::-webkit-scrollbar': { display: 'none' }}}>
+      <Box pt={16} pb={8} bg={color.white} flex={1} overflowY="scroll" sx={{ '&::-webkit-scrollbar': { display: 'none' }}}>
         <Grid 
           p="15px 20px"
           gridTemplateColumns="repeat(2, 1fr)"
