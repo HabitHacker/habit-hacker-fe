@@ -66,6 +66,7 @@ export default function Challenge() {
                 alt="info card"
                 src="/images/bg_info_card.png"
                 fill
+                sizes="100% auto"
               />
             </Box>
             <Box position="absolute" top="0" zIndex="1" p="min(36px, 9%) min(30px, 7.5%)">

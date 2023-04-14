@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-import { useRecoilValue } from "recoil";
-import { accountState } from "src/recoil";
+import { useAccount, useConnect } from "wagmi";
+import { InjectedConnector } from 'wagmi/connectors/injected';
 import HamburgerIcon from 'public/icons/ico-hamburger.svg';
 import ChevronIcon from 'public/icons/ico-chevron-left.svg';
 import { useRouter } from "next/router";
@@ -22,18 +22,25 @@ export default function Header({
   background="#fff"
 }: Props) {
   const router = useRouter();
-  const account = useRecoilValue(accountState);
+
+  const { address, isConnected } = useAccount();
+  const { connect } = useConnect({
+    connector: new InjectedConnector(),
+  });
+
+  const handleConnectWallet = () => connect();
   return (
     <Box
       as="header"
       p="12px 20px"
       position="fixed"
-      zIndex="1"
+      zIndex={2}
       top="0"
       left="50%"
       transform="translateX(-50%)"
       w="100%"
       maxW="500px"
+      h="64px"
       display="flex"
       alignItems="center"
       bg={background}
@@ -58,17 +65,21 @@ export default function Header({
         </Text>
       </Box>
       <Box as="nav" ml="auto">
-        {account ? (
-          <Box position="relative" borderRadius="99px" width="34px" height="34px">
-            <Image
-              alt="account-image"
-              src=""
-              fill
-            />
+        {isConnected ? (
+          <Box 
+            as="button" 
+            type="button"
+            position="relative" 
+            borderRadius="99px" 
+            width="36px" 
+            height="36px"
+            overflow="hidden"
+          >
+            <Image alt="account-image" src="/images/dummy/dummy_nft.jpeg" fill sizes="100% auto" objectFit="cover" />
           </Box>
         ) : (
           <Button
-            onClick={() => {}}
+            onClick={handleConnectWallet}
             padding="9px 20px"
             fontWeight="600"
           >

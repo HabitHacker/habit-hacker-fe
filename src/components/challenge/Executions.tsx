@@ -61,7 +61,7 @@ export default function Executions({
               bg="linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.9) 25.46%)"
             >
               <Box position="relative" width="16px" height="16px" borderRadius="99px" overflow="hidden">
-                <Image alt={`profile-${i}`} src="/images/dummy/dummy_nft.jpeg" fill objectFit="cover"/>
+                <Image alt={`profile-${i}`} src="/images/dummy/dummy_nft.jpeg" fill sizes="100% auto" objectFit="cover"/>
               </Box>
               <Text ml="6px" color={color.background.layer2} fontWeight={500} fontSize="8px" lineHeight="10px">
                 {reduceHashString(execution.account, 7, 4)}

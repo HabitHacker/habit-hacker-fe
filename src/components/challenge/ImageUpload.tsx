@@ -75,6 +75,7 @@ export default function ImageUpload({ timeLeft, onSubmit, image }: Props) {
           alt="upload-image"
           src={image || '/images/default_img.png'}
           fill
+          sizes="100% auto"
           objectFit='cover'
         />
       </Box>
@@ -97,7 +98,7 @@ export default function ImageUpload({ timeLeft, onSubmit, image }: Props) {
           w="92px"
           h="35px"
         >
-          Upload 
+          {status==='rejected' ? "Reupload" : "Upload"}
         </Button>
       </Box>
     </Box>

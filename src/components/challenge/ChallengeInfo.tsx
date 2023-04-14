@@ -20,7 +20,7 @@ export default function ChallengeInfo({
   return (
     <Box display="flex" {...rest}>
       <Box position="relative" width="106px" height="106px" borderRadius="15px" overflow="hidden">
-        <Image alt={title} src={image} fill objectFit="cover" />
+        <Image alt={title} src={image} fill sizes="100% auto" objectFit="cover" />
       </Box>
       <Box ml="21px">
         <Text as="h4" fontWeight={800} fontSize="20px" lineHeight="24px">

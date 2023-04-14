@@ -15,7 +15,7 @@ export default function MyChallenges() {
       </Head> 
       <Header
         title="Verify"
-        returnUrl={null}
+        returnUrl="/"
       />
       <Box mt={16} p="30px 20px" display="grid" gap="20px">
         {challengeList.map(challenge => (

@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "./DynamicHeader";
 import Loading from "./Loading";
 import Button from "./Button";
 

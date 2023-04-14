@@ -27,7 +27,7 @@ export default function Card({
       <Decoration/>
       <Box display="flex" textAlign="left">
         <Box position="relative" width="60px" height="60px" borderRadius="15px" overflow="hidden">
-          <Image alt={title} src={image} fill objectFit="cover" />
+          <Image alt={title} src={image} fill sizes="100% auto" objectFit="cover" />
         </Box>
         <Box ml="12px">
           <Text as="h4" fontWeight={800} fontSize="20px" lineHeight="24px">

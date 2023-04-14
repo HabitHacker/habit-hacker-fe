@@ -20,7 +20,7 @@ export default function Card({
     <GridItem onClick={() => router.push(`challenge/${id}`)}>
       <Box position="relative" borderRadius="9px" overflow="hidden">
         <Box position="relative" width="100%" pt="calc(100% * 142 / 168)">
-          <Image alt={title} src={image} fill/>
+          <Image alt={title} src={image} fill sizes="100% auto"/>
         </Box>
         <Box
           p="7px"
