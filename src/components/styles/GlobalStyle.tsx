@@ -51,14 +51,18 @@ export const GlobalStyle = () => <Global
     
     body {
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
       width: 100%;
       max-width: 500px;
-      min-height: 100%;
+      min-height: 100vh;
       background: #E8ECF0;
       color: ${color.text.primary};
       font-family: 'Rota', sans-serif !important;
+
+      > div {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
     }
     body::-webkit-scrollbar {
       display: none;

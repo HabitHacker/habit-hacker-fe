@@ -5,6 +5,7 @@ const text = {
 };
 
 const background = {
+  layer1: '#F1F4F5',
   layer2: '#E8ECF0',
   layer3: '#E0EFFF',
 };

@@ -109,7 +109,7 @@ export default function Challenge() {
         </Box>
         <Box mt="auto" p="24px 20px 48px 20px" flex={1} textAlign="center">
           <Button
-            onClick={() => {}}
+            onClick={() => router.push(`/challenge/${id}/participate`)}
             marginBottom="10px"
             padding="16px 20px"
             h="fit-content"
