@@ -5,6 +5,7 @@ const text = {
 };
 
 const background = {
+  modal: '#000000A6',
   grey1: '#D9D9D9',
   layer1: '#F1F4F5',
   layer2: '#E8ECF0',
@@ -12,11 +13,12 @@ const background = {
 };
 
 export const color = {
-  primary: '#2685FF',
+  primary: '#3F93FF',
   secondary: '#49A8FF',
   white: '#fff',
   text,
   background,
   pending: '#FF8A1E',
   warning: '#FF4545',
+  reject: '#FF6D6D',
 };
