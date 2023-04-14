@@ -11,13 +11,13 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const newImage = await prisma.userImage.create({
+  const result = await prisma.execution.create({
     data: JSON.parse(req.body)
   });
 
   res.json({
     body: {
-      image: newImage,
+      data: result,
     }
   });
 }

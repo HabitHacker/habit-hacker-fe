@@ -10,9 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model UserImage {
-  id        String   @default(cuid()) @id
-  path      String
-  name      String
-  createdAt DateTime @default(now())
+model Execution {
+  id           String   @default(cuid()) @id
+  account      String
+  challengeId  String
+  count        String
+  imagePath    String
+  imageName    String
 }
