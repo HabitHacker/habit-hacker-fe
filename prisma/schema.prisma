@@ -10,6 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum ExecutionStatus {
+  success
+  pending
+  rejected
+}
 model Execution {
   id           String   @default(cuid()) @id
   account      String
@@ -17,4 +22,5 @@ model Execution {
   count        Int
   imagePath    String
   imageName    String
+  status       ExecutionStatus
 }

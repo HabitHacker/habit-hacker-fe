@@ -18,6 +18,7 @@ export type ExecutionType = {
   count: number;
   imagePath: string;
   imageName: string;
+  status: ImageUploadStatus;
 };
 
 export type ImageUploadStatus = 'none'|'uploading'|'success'|'pending'|'rejected';

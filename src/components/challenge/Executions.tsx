@@ -41,9 +41,10 @@ export default function Executions({
       <Grid mt="28px" gridTemplateColumns="repeat(3, 1fr)" gap="20px 10px">
         {executions.map((execution, i) => (
           <Box 
+            key={`execution ${execution?.id}-${i}`}
             pt="100%" 
             position="relative"
-            bgImage={`url(${execution.imagePath})`}
+            bgImage={`url(${execution?.imagePath})`}
             bgRepeat="no-repeat"
             bgSize="cover"
             bgPosition="center"
@@ -64,7 +65,7 @@ export default function Executions({
                 <Image alt={`profile-${i}`} src="/images/dummy/dummy_nft.jpeg" fill sizes="100% auto" objectFit="cover"/>
               </Box>
               <Text ml="6px" color={color.background.layer2} fontWeight={500} fontSize="8px" lineHeight="10px">
-                {reduceHashString(execution.account, 7, 4)}
+                {reduceHashString(execution?.account, 7, 4)}
               </Text>
             </Box>
           </Box>

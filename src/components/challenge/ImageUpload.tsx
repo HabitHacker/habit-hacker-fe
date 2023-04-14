@@ -2,17 +2,17 @@ import { Box, Text } from '@chakra-ui/react';
 import dayjs from 'dayjs';
 import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
-import { ImageUploadStatus } from 'src/types';
+import { ExecutionType, ImageUploadStatus } from 'src/types';
 import { Loading, Button } from '../common';
 import { color } from '../styles/colors';
 
 interface Props {
   timeLeft: number;
   onSubmit: (file: File) => void;
-  image: string | null;
+  execution: ExecutionType;
 };
 
-export default function ImageUpload({ timeLeft, onSubmit, image }: Props) {
+export default function ImageUpload({ timeLeft, onSubmit, execution }: Props) {
   const ref = useRef<HTMLInputElement>(null);
   const [time, setTime] = useState(timeLeft);
   const [status, setStatus] = useState<ImageUploadStatus>('none');
@@ -41,8 +41,8 @@ export default function ImageUpload({ timeLeft, onSubmit, image }: Props) {
     }, 1000);
   }, []);
 
-  const Status = () => {
-    switch (status) {
+  const Status = (props) => {
+    switch (props.status) {
       case 'pending': return <Text mt="6px" fontWeight={500} lineHeight="20px" color={color.pending}>
         💬  Pending
       </Text>;
@@ -70,10 +70,10 @@ export default function ImageUpload({ timeLeft, onSubmit, image }: Props) {
         onChange={handleChangeFile}
         display="none"
       />
-      <Box position="relative" w="128px" h="128px" borderRadius="12px">
+      <Box position="relative" w="128px" h="128px" borderRadius="12px" overflow="hidden">
         <Image
           alt="upload-image"
-          src={image || '/images/default_img.png'}
+          src={execution?.imagePath || '/images/default_img.png'}
           fill
           sizes="100% auto"
           objectFit='cover'
@@ -88,7 +88,7 @@ export default function ImageUpload({ timeLeft, onSubmit, image }: Props) {
         >
           Please {status==='rejected' ? "reupload" : "upload"} a picture
         </Text>
-        <Status/>
+        <Status status={execution?.status || status} />
         <Button
           onClick={handleClickUpload}
           mt="auto"

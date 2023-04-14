@@ -11,13 +11,17 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const result = await prisma.execution.create({
-    data: JSON.parse(req.body)
-  });
+  switch (req.method) {
+    case 'POST': {
+      const response = await prisma.execution.create({
+        data: JSON.parse(req.body)
+      });
 
-  res.json({
-    body: {
-      data: result,
+      res.json({
+        body: {
+          data: response,
+        }
+      });
     }
-  });
+  }
 }
