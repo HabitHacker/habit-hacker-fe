@@ -34,7 +34,7 @@ const Button = ({
       _focus={{ bg: background }}
       {...rest}
     >
-      children
+      {children}
     </Btn>
   )
 };

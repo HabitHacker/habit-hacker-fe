@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Image Upload</title>
+        <title>Challenge</title>
       </Head>
       <Header title="List" isHome />
       <Box pt={16} bg={color.white} flex={1} overflowY="scroll" sx={{ '&::-webkit-scrollbar': { display: 'none' }}}>

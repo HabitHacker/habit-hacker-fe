@@ -1,5 +1,7 @@
 const text = {
   primary: '#25282B',
+  secondary: '#5E6367',
+  tertiary: '#8C8C8C',
 };
 
 const background = {

@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 
 interface Props {
   id: string;
-  balance: number;
+  deposit: number;
   title: string;
   image: string;
   startDate: Date;
@@ -17,7 +17,7 @@ interface Props {
 
 export default function Card({
   id,
-  balance,
+  deposit,
   title,
   image,
   startDate,
@@ -41,7 +41,7 @@ export default function Card({
           textAlign="center"
         >
           <Text fontWeight={500}>
-            {balance} MATIC
+            {deposit} MATIC
           </Text>
         </Box>
       </Box>
@@ -77,6 +77,7 @@ export default function Card({
           </Box>
         ))}
       </Box>
+      
     </GridItem>
   );
 };
