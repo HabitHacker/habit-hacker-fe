@@ -23,7 +23,7 @@ export default function Detail() {
       </Head>
       <Header
         title="Details"
-        returnUrl={`/challenges/${id}`}
+        returnUrl={`/challenge/${id}`}
       />
       <Box mt={16} position="relative" display="flex" flexDirection="column" flex={1} bg={color.white}>
         <Box 
@@ -46,7 +46,7 @@ export default function Detail() {
             {challenge.title}
           </Text>
           <Text mt="4px" fontWeight={500} color={color.text.tertiary} sx={{ '& span': { color: color.secondary } }}>
-            Start on {dayjs(challenge.startDate).format('MMMM DD, YYYY')}
+            Start on <span>{dayjs(challenge.startDate).format('MMMM DD, YYYY')}</span>
           </Text>
         </Box>
         <Box 

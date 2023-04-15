@@ -30,8 +30,15 @@ export default function Card({
           <Image alt={title} src={image} fill sizes="100% auto" objectFit="cover" />
         </Box>
         <Box ml="12px">
-          <Text as="h4" fontWeight={800} fontSize="20px" lineHeight="24px">
-            {title}
+          <Text 
+            as="h4" 
+            fontWeight={800} 
+            fontSize="20px" 
+            lineHeight="24px"
+            dangerouslySetInnerHTML={{
+              __html: title.replace(/\n/g, '<br/>')
+            }}
+          >
           </Text>
           <Box mt="8px" display="flex" alignItems="center">
             <EtherIcon />

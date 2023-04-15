@@ -29,24 +29,25 @@ export default function Moderate() {
       </Head>
       <RejectModal isOpen={isModalOpen} onConfirm={onConfirm}/>
       <Header title="Participating" returnUrl={`/challenge/${id}`} />
-      <Box mt={16} bg={color.white} p="16px 20px">
+      <Box mt={16} bg={color.white} p="16px 20px" flex={1}>
         <Text
           as="h1"
           fontWeight="800"
           fontSize="26px"
           lineHeight="32px"
-        >
-          {challenge.title}
-        </Text>
+          dangerouslySetInnerHTML={{
+            __html: challenge.title.replace(/\n/g, '<br/>')
+          }}
+        />
         <Box as="ul" pt="7px">
           {[
             'It should be confirmed that the user exercised on the gym or on the promenade',
             'Number of r of participants',
             'Someone needs to come out',
           ].map(x => (
-            <Box as="li" key={x} mt="6px" h="24px" sx={{ listStyle: 'none' }}>
-              <CheckIcon style={{ float: 'left' }}/>
-              <Text fontWeight={500} fontSize="17px" lineHeight="24px" color={color.text.tertiary}>{x}</Text>
+            <Box as="li" key={x} mt="6px" display="flex" sx={{ listStyle: 'none' }}>
+              <CheckIcon  style={{ width: '24px' }} />
+              <Text flex={1} fontWeight={500} fontSize="17px" lineHeight="24px" color={color.text.tertiary}>{x}</Text>
             </Box>
           ))}
         </Box>

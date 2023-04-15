@@ -7,7 +7,7 @@ export const challengeList: Array<ChallengeType> = [
   {
     id: '0x6gr239290302e3',
     deposit: 33.34,
-    title: 'Jogging every morning',
+    title: 'Jogging every \nmorning',
     image: '/images/dummy/challenges/challenge_6.png',
     startDate: new Date('2023-04-06'),
     endDate: new Date('2023-05-06'),
@@ -44,7 +44,7 @@ export const challengeList: Array<ChallengeType> = [
   {
     id: '0x6gr9209sdvsdv',
     deposit: 93,
-    title: 'Read 10 pages every day',
+    title: 'Read 10 pages \nevery day',
     image: '/images/dummy/challenges/challenge_5.png',
     startDate: new Date('2023-04-16'),
     endDate: new Date('2023-04-30'),
@@ -81,7 +81,7 @@ export const challengeList: Array<ChallengeType> = [
   {
     id: '0x6grsdf9023ier23',
     deposit: 631.99,
-    title: 'Working out every day',
+    title: 'Working out \nevery day',
     image: '/images/dummy/challenges/challenge_1.png',
     startDate: new Date('2023-04-16'),
     endDate: new Date('2023-04-30'),
@@ -118,7 +118,7 @@ export const challengeList: Array<ChallengeType> = [
   {
     id: '0x6gr434902rj23i',
     deposit: 32.32,
-    title: 'Waking up early in the morning',
+    title: 'Waking up early in \nthe morning',
     image: '/images/dummy/challenges/challenge_4.png',
     startDate: new Date('2023-04-15'),
     endDate: new Date('2023-05-24'),
@@ -150,12 +150,12 @@ export const challengeList: Array<ChallengeType> = [
     maxDeposits: 1000,
     average: 23,
     background: '#1D1D1D',
-    fontColor: color.primary,
+    fontColor: color.white,
   },
   {
     id: '0x6gr3290392rwf',
     deposit: 74.4,
-    title: 'Using stairs instead of elevators',
+    title: 'Using stairs instead \nof elevators',
     image: '/images/dummy/challenges/challenge_3.png',
     startDate: new Date('2023-05-02'),
     endDate: new Date('2023-05-06'),
@@ -192,7 +192,7 @@ export const challengeList: Array<ChallengeType> = [
   {
     id: '0x6gr23929v23riojfwe',
     deposit: 432.1,
-    title: 'Read a magazine every day',
+    title: 'Read a magazine \nevery day',
     image: '/images/dummy/challenges/challenge_2.png',
     startDate: new Date('2023-04-28'),
     endDate: new Date('2023-05-06'),

@@ -35,7 +35,7 @@ export default function Challenge() {
           backgroundSize="cover"
           backgroundPosition="center"
         />
-        <Box position="relative" zIndex={1} mt="min(50%, 150px)" w="100%" px="20px">
+        <Box position="relative" zIndex={1} mt="auto" pt="min(50%, 150px)" w="100%" px="20px">
           <Box display="flex" alignItems="center">
             {challenge.hashtags.map((hashtag, i) => (
               <Box 
@@ -91,7 +91,7 @@ export default function Challenge() {
               </Text>
               <Box mt="16px" display="flex" alignItems="center">
                 <EtherIcon />
-                <Text ml="9px" fontWeight={800} fontSize="22px" lineHeight="1" color={color.text.secondary}>
+                <Text ml="9px" fontSize="22px" lineHeight="1" color={color.text.secondary}>
                   {challenge.deposit}
                 </Text>
               </Box>
@@ -100,16 +100,17 @@ export default function Challenge() {
               </Text>
               <Box mt="16px" display="flex" alignItems="center">
                 <ParticipantIcon />
-                <Text ml="12px" fontWeight={800} fontSize="22px" lineHeight="1" color={color.text.secondary}>
+                <Text ml="12px" fontSize="22px" lineHeight="1" color={color.text.secondary}>
                   {challenge.participants}/{challenge.limit}
                 </Text>
               </Box>
             </Box>
           </Box>
         </Box>
-        <Box mt="auto" p="24px 20px 48px 20px" flex={1} textAlign="center">
+        <Box p="24px 20px 48px 20px" textAlign="center">
           <Button
             onClick={() => router.push(`/challenge/${id}/participate`)}
+            mt="auto"
             marginBottom="10px"
             padding="16px 20px"
             h="fit-content"
@@ -129,7 +130,7 @@ export default function Challenge() {
             lineHeight="21px"
             borderBottom={`2px solid ${challenge.fontColor}`}
           >
-            Read More
+            Details
           </Box>
         </Box>
       </Box>

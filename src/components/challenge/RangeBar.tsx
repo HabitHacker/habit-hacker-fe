@@ -32,8 +32,8 @@ export default function RangeBar({
           />
         </Box>
       </Box>
-      <Box mt="8px" position="relative">
-        <Box position="absolute" top="0" left="0">
+      <Box mt="8px" position="relative" display="flex">
+        <Box>
           <Text fontWeight={500}>Min</Text>
           <Text 
             mt="6px"
@@ -44,18 +44,7 @@ export default function RangeBar({
             {min}ETH
           </Text>
         </Box>
-        <Box ml="25%" w="fit-content" textAlign="center">
-          <Text fontWeight={500}>Average</Text>
-          <Text 
-            mt="6px"
-            color={color.primary}
-            fontSize="14px"
-            lineHeight="17px"
-          >
-            {avg}ETH
-          </Text>
-        </Box>
-        <Box position="absolute" top="0" right="0" textAlign="right">
+        <Box ml="auto" textAlign="right">
           <Text fontWeight={500}>Max</Text>
           <Text 
             mt="6px"

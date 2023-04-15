@@ -22,7 +22,7 @@ export default function Splash() {
       <Head>
         <title>Habit Hacker</title>
       </Head>
-      <Box w="100%" h="100vh" bg={color.primary} display="flex" alignItems="center" justifyContent="center">
+      <Box w="100%" h="100vh" bg={color.white} display="flex" alignItems="center" justifyContent="center">
         <Image alt="splash" src="/images/splash.svg" width={216} height={114} />
       </Box>
     </>

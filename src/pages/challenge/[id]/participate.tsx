@@ -51,6 +51,14 @@ export default function Participate() {
               fontWeight={800}
               fontSize="40px"
               borderRadius="14px"
+              border="none"
+              bg={color.background.layer1}
+              color={color.primary}
+              sx={{
+                '&:focus': {
+                  border: 'none'
+                }
+              }}
             />
             <InputRightElement 
               right="20px"
@@ -66,7 +74,7 @@ export default function Participate() {
           >
             You can get this NFT
           </Text>
-          <Box mt="14px" pb="48px" display="flex" minHeight="200px">
+          <Box mt="14px" mb="28px" display="flex">
             {challenge.nfts.map((nft, i) => (
               <Image 
                 key={nft.title}

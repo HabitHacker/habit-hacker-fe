@@ -14,6 +14,7 @@ export default function Intro() {
       justifyContent="center" 
       alignItems="center"
       overflow="hidden"
+      flex={1}
     >
       <Gradient2>
         <Image 
@@ -29,7 +30,7 @@ export default function Intro() {
           fill
         />
       </Gradient1>
-      <Text position="relative" zIndex={1} textAlign="center" fontWeight="bold" fontSize="29px" lineHeight="40.6px">
+      <Text mt="auto" position="relative" zIndex={1} textAlign="center" fontWeight="bold" fontSize="29px" lineHeight="40.6px">
         Habits are the key<br/>
         to change your life
       </Text>

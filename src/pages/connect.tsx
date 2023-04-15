@@ -35,9 +35,9 @@ export default function Connect() {
         <Box 
           mt="auto"
           w="100%"
-          p="58px 20px 34px 20px"
+          p="52px 32px 34px 32px"
           position="relative"
-          bg={color.background.layer1}
+          bg={color.white}
           borderTopLeftRadius="20px"
           borderTopRightRadius="20px"
         >
@@ -45,22 +45,24 @@ export default function Connect() {
             position="absolute"
             width="50px"
             height="4px"
-            top="14px"
+            top="19px"
             left="calc(50% - 25px)"
             bg="#D7DBE0"
             borderRadius="99px"
           />
           <Text
-            fontWeight={700}
-            fontSize="20px"
-            lineHeight="1.5"
+            fontWeight={500}
+            fontSize="18px"
+            lineHeight="25px"
           >
-            Challenge, Certify and Gain Coin
-            Take hold This key 
+            Build healthy habits and achieve<br/>
+            your goals with ease with Habit Hacker<br/> 
+            and unlock your full potential for a happier,<br/>
+            more fulfilling life.
           </Text>
           <Button
             onClick={handleConnectWallet}
-            mt={28}
+            mt={6}
             p="16px 20px"
             borderRadius="21px"
             h="fit-content"
