@@ -17,7 +17,7 @@ export default function Challenges() {
       <BottomGnb current="List" />
       <Box pt="124px" pb={8} bg={color.white} flex={1} overflowY="scroll" sx={{ '&::-webkit-scrollbar': { display: 'none' }}}>
         <Grid 
-          p="15px 20px"
+          p="15px 20px 90px 20px"
           gridTemplateColumns="repeat(2, 1fr)"
           gap="32px 14px"
         >
