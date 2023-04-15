@@ -86,7 +86,12 @@ export default function ImageUpload({ timeLeft, onSubmit, execution }: Props) {
           lineHeight="25px" 
           {...status==='rejected' && { color: color.warning }}
         >
-          Please {status==='rejected' ? "reupload" : "upload"} a picture
+          {status === 'pending' ? 'Please wait until it\'s verified' :
+            status === 'rejected' ? 'The verification failed. Try again':
+            status === 'success' ? 'It\'s verified':
+            'Please upload a picture'
+          }
+          
         </Text>
         <Status status={execution?.status || status} />
         <Button
@@ -98,7 +103,7 @@ export default function ImageUpload({ timeLeft, onSubmit, execution }: Props) {
           w="92px"
           h="35px"
         >
-          {status==='rejected' ? "Reupload" : "Upload"}
+          {status==='none' ? "Reupload" : "Upload"}
         </Button>
       </Box>
     </Box>

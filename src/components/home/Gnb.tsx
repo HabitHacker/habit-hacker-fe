@@ -24,6 +24,7 @@ export default function Gnb() {
     } else {
       router.push({ query: { category: val } });
     }
+    setIsModalOpen(false);
   };
   return (
     <>

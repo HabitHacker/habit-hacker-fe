@@ -40,9 +40,9 @@ export default function Moderate() {
         </Text>
         <Box as="ul" pt="7px">
           {[
-            'Number of participants',
+            'It should be confirmed that the user exercised on the gym or on the promenade',
             'Number of r of participants',
-            'Number of participantNumber of',
+            'Someone needs to come out',
           ].map(x => (
             <Box as="li" key={x} mt="6px" h="24px" sx={{ listStyle: 'none' }}>
               <CheckIcon style={{ float: 'left' }}/>

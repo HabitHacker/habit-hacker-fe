@@ -78,15 +78,14 @@ export default function Participate() {
               />
             ))}
           </Box>
-          <Text>If you succeed 100%</Text>
-          <Text mt="8px">If you succeed 85%</Text>
-          <Text mt="8px">If you succeed less than 85%</Text>
+          <Text>If you succeed 100%, you get back as much as a (Betting amount for failed users)*(Betted amount/Total Betting Amount).</Text>
+          <Text mt="8px">If you succeed 85%, you'll get back as much as you bet.</Text>
+          <Text mt="8px">If you succeed less than 85%, you'll get 50 percent of your bet back.</Text>
           <Text
             mt="19px"
             color={color.text.tertiary}
           >
-            If you bet before we start,<br/>
-            we'll give you back after we finish!
+            If everyone succeeds,<br/>there is no return
           </Text>
         </Box>
         <Box mt="auto" px="20px" pb="30px">

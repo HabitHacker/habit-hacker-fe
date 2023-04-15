@@ -18,7 +18,7 @@ const Icon = ({ isCurrent, type }) => {
       return (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="48" height="48" fill="white"/>
-        <circle cx="28.2406" cy="20.6193" r="8.61934" fill="#D6DADF"/>
+        <circle cx="28.2406" cy="20.6193" r="8.61934" fill={currentColor}/>
         <circle cx="28.2406" cy="20.6194" r="5.60257" fill="white"/>
         <rect x="23.8207" y="25.3062" width="3.2003" height="15.5492" rx="1.60015" transform="rotate(35.2903 23.8207 25.3062)" fill={currentColor}/>
         <rect x="19.15" y="37.6088" width="2.97779" height="9.01034" rx="1.48889" transform="rotate(126.582 19.15 37.6088)" fill={currentColor}/>
@@ -63,9 +63,9 @@ export default function BottomGnb({ current }) {
           textAlign="center"
           onClick={() => {
             switch (x) {
-              case 'List': router.push('/challenges');
-              case 'List': router.push('/my-challenges');
-              case 'List': router.push('/mypage');
+              case 'List': router.push('/challenges'); return;
+              case 'Habits': router.push('/my-challenges'); return;
+              case 'Mypage': router.push('/mypage'); return;
             }
           }}
         >
