@@ -23,7 +23,7 @@ export default function Challenge() {
       </Head>
       <Header
         title="Participating"
-        returnUrl="/"
+        returnUrl="/challenges"
       />
       <Box mt={16} position="relative" display="flex" flexDirection="column" flex={1} bg={color.background.layer3}>
         <Box 

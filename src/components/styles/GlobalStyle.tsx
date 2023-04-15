@@ -57,6 +57,7 @@ export const GlobalStyle = () => <Global
       background: #E8ECF0;
       color: ${color.text.primary};
       font-family: 'Rota', sans-serif !important;
+      user-select: none;
 
       > #__next {
         min-height: 100vh;

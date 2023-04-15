@@ -52,7 +52,7 @@ export default function ImageUpload({ timeLeft, onSubmit, execution }: Props) {
       case 'success': return <Text mt="6px" fontWeight={500} lineHeight="20px" color={color.primary}>
         🎉  Success
       </Text>;
-      default: return <Text mt="6px" fontWeight={500} lineHeight="20px" color={color.text.tertiary}>
+      default: return <Text mt="6px" fontWeight={500} lineHeight="20px" color={color.primary}>
         {dayjs(time).format('HH:mm:ss')} left
       </Text>;
     };

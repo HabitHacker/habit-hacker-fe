@@ -5,12 +5,14 @@ import React, { useState } from 'react';
 import { Header, Loading } from 'src/components/common';
 import { ChallengeInfo, Executions, ImageUpload } from 'src/components/challenge';
 import { color } from 'src/components/styles/colors';
-import { challengeList } from 'src/dummyData';
+import { challengeList, executions } from 'src/dummyData';
 import uploadImage from 'src/utils/uploadImage';
-import { PrismaClient } from '@prisma/client';
 import { useMetaMask } from 'src/hooks/useMetaMask';
+import Chevron from 'public/icons/ico-chevron-right-teritary.svg';
 
-export default function Verify({ executions }) {
+export default function Verify(
+  // { executions }
+) {
   const router = useRouter();
   const { id } = router.query;
   const [execution, setExecution] = useState(null);
@@ -65,9 +67,25 @@ export default function Verify({ executions }) {
         <ChallengeInfo {...challenge} depositsVisible p="12px 20px 28px 20px" />
         <Box p="27px 20px 32px 20px" bg={color.white}>
           <Box>
-            <Text fontWeight={800} fontSize="20px" lineHeight="25px">
-              Mine
-            </Text>
+            <Box display="flex" alignItems="center">
+              <Text fontWeight={800} fontSize="20px" lineHeight="25px">
+                Mine
+              </Text>
+              <Box 
+                onClick={() => router.push(`/challenge/${id}/my-history`)}
+                ml="auto"
+                display="flex"
+                alignItems="center"
+              >
+                <Text
+                  fontWeight={600}
+                  color={color.text.tertiary}
+                >
+                  View History
+                </Text>
+                <Chevron/>
+              </Box>
+            </Box>
             <ImageUpload timeLeft={challenge.timeLeft} onSubmit={onSubmit} execution={execution} />
             <Box mt="43px" width="100%" h="3px" borderRadius="99px" bg={color.background.layer1}/>
           </Box>
@@ -81,11 +99,11 @@ export default function Verify({ executions }) {
   );
 }
 
-export const getServerSideProps = async () => {
-  const prisma = new PrismaClient()
-  const executions = await prisma.execution.findMany();
+// export const getServerSideProps = async () => {
+//   const prisma = new PrismaClient()
+//   const executions = await prisma.execution.findMany();
 
-  return ({
-    props: { executions },
-  });
-};
+//   return ({
+//     props: { executions },
+//   });
+// };

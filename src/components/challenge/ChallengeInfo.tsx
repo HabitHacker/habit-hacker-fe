@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { ChallengeType } from "src/types";
 import { color } from "../styles/colors";
-import LinkIcon from 'public/icons/ico-link.svg';
+import EtherIcon from 'public/icons/ico-eth.svg';
 
 export default function ChallengeInfo({
   id,
@@ -28,8 +28,8 @@ export default function ChallengeInfo({
         </Text>
         {depositsVisible && (
           <Box mt="8px" display="flex" alignItems="center">
-            <LinkIcon />
-            <Text ml="9px" fontWeight={800} fontSize="18px" lineHeight="1" color={color.text.secondary}>
+            <EtherIcon />
+            <Text ml="6px" fontWeight={800} fontSize="18px" lineHeight="1" color={color.text.secondary}>
               {deposit}
             </Text>
           </Box>

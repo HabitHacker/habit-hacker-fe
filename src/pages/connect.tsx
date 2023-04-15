@@ -5,7 +5,6 @@ import React from 'react';
 import { Button } from 'src/components/common';
 import { Intro } from 'src/components/connect';
 import { color } from 'src/components/styles/colors';
-import MetaMaskSDK from '@metamask/sdk';
 import { useMetaMask } from 'src/hooks/useMetaMask';
 
 export default function Connect() {

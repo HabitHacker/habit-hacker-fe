@@ -57,6 +57,7 @@ export default function Gnb() {
               fontWeight={700}
               fontSize="22px"
               lineHeight="27px"
+              userSelect="none"
             >
               {category.label}
             </Text>

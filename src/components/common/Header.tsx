@@ -21,12 +21,11 @@ export default function Header({
   background="#fff"
 }: Props) {
   const router = useRouter();
-  const { isConnected, connect, account } = useMetaMask();
+  const { isConnected, connect } = useMetaMask();
 
   const handleConnectWallet = () => {
     connect();
   };
-  // console.log(account)
   return (
     <Box
       as="header"

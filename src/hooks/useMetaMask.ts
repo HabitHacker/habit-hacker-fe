@@ -4,6 +4,7 @@ import MetaMaskSDK from '@metamask/sdk';
 export function useMetaMask() {
   const [account, setAccount] = useState(null);
   const isConnected = useMemo(() => {
+    if (typeof window === 'undefined') return;
     const MMSDK = new MetaMaskSDK();
     const ethereum = MMSDK.getProvider(); 
 
@@ -11,6 +12,7 @@ export function useMetaMask() {
   }, []);
 
   const connect = (callback?: () => void) => {
+    if (typeof window === 'undefined') return;
     const MMSDK = new MetaMaskSDK();
     const ethereum = MMSDK.getProvider(); // You can also access via window.ethereum
     ethereum.request({ 
@@ -22,6 +24,7 @@ export function useMetaMask() {
   };
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     let currentAccount = null;
     const MMSDK = new MetaMaskSDK();
     const ethereum = MMSDK.getProvider(); 
