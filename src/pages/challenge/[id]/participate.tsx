@@ -50,7 +50,7 @@ export default function Participate() {
             <InputRightElement 
               right="20px"
               height="100%" 
-              children={<Text fontWeight={500} fontSize="20px">MATIC</Text>} />
+              children={<Text fontWeight={500} fontSize="20px">ETH</Text>} />
           </InputGroup>
         </Box>
         <Box p="30px 20px" fontWeight={500} lineHeight="20px" flex={1}>

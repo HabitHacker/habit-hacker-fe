@@ -32,7 +32,7 @@ export default function Card({
           textAlign="center"
         >
           <Text fontWeight={500}>
-            {deposit} MATIC
+            {deposit} ETH
           </Text>
         </Box>
       </Box>

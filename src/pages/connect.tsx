@@ -2,7 +2,9 @@ import { Box, Text } from '@chakra-ui/react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { Key } from 'src/components/3d-model';
 import { Button } from 'src/components/common';
+import { Intro } from 'src/components/connect';
 import { color } from 'src/components/styles/colors';
 import { useConnect } from 'wagmi';
 import { InjectedConnector } from 'wagmi/connectors/injected';
@@ -22,7 +24,17 @@ export default function Connect() {
       <Head>
         <title>Habit Hacker</title>
       </Head>
-      <Box w="100%" h="100vh" display="flex" flexDirection="column">
+      <Box 
+        w="100%" 
+        h="100vh" 
+        display="flex" 
+        flexDirection="column" 
+        bgImage="url(/images/background/bg-connect.png)" 
+        bgPos="center" 
+        bgRepeat="no-repeat" 
+        bgSize="cover"
+      >
+        <Intro/>
         <Box 
           mt="auto"
           w="100%"
