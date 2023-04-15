@@ -13,11 +13,8 @@ export default function MyChallenges() {
       <Head>
         <title>Participating Challenges</title>
       </Head> 
-      <Header
-        title="Verify"
-        returnUrl="/challenges"
-      />
-      <Box mt={16} p="30px 20px" display="grid" gap="20px">
+      <Header title="Habits" buttonVisible={false}/>
+      <Box mt={16} p="30px 20px 120px 20px" display="grid" gap="30px">
         {challengeList.map(challenge => (
           <Card
             key={challenge.id}

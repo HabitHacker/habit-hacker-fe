@@ -21,8 +21,8 @@ export default function MyHistory() {
         <title>My History: {challenge.title}</title>
       </Head> 
       <Header
-        title="Verify"
-        returnUrl={`/my-challenges`}
+        title="My History"
+        returnUrl={`/challenge/${id}/verify`}
         background={color.background.layer1}
       />
       <Box pt={16} position="relative" display="flex" flexDirection="column" flex={1} background={color.background.layer1}>

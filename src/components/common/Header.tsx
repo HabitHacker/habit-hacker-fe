@@ -10,6 +10,7 @@ import { useMetaMask } from "src/hooks/useMetaMask";
 interface Props {
   title: string;
   isHome?: boolean;
+  buttonVisible?: boolean;
   returnUrl?: string | null;
   background?: string;
 };
@@ -17,6 +18,7 @@ interface Props {
 export default function Header({
   title,
   isHome=false,
+  buttonVisible=true,
   returnUrl,
   background="#fff"
 }: Props) {
@@ -53,18 +55,20 @@ export default function Header({
         </Box>
       ) : (
         <>
+          {buttonVisible && (
+            <Box as="nav" mr="12px">
+              <ChevronIcon 
+                onClick={() => { 
+                  if (returnUrl === null) {
+                    router.back();
+                  } else {
+                    router.push(returnUrl);
+                  }
+                }} 
+              />
+            </Box>
+          )}
           <Box as="nav">
-            <ChevronIcon 
-              onClick={() => { 
-                if (returnUrl === null) {
-                  router.back();
-                } else {
-                  router.push(returnUrl);
-                }
-              }} 
-            />
-          </Box>
-          <Box as="nav" ml="12px">
             <Text fontWeight="700" fontSize="18px" lineHeight="22px">
               {title} 
             </Text>

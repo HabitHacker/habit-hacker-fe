@@ -103,7 +103,7 @@ export default function ImageUpload({ timeLeft, onSubmit, execution }: Props) {
           w="92px"
           h="35px"
         >
-          {status==='none' ? "Reupload" : "Upload"}
+          {status==='none' ? "Upload" : "Reupload"}
         </Button>
       </Box>
     </Box>
