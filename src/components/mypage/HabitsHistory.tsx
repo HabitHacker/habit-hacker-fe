@@ -28,6 +28,7 @@ export default function HabitsHistory({ histories }: Props) {
           const challenge = challengeList.find(item => item.id === history.challengeId);
           return (
             <ChallengeInfo
+              key={history.challengeId}
               {...challenge}
               deposit={history.balance}
               depositsVisible
