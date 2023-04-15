@@ -237,7 +237,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_1.png',
     imageName: 'execution_1.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202efef34r21232323',
@@ -246,7 +247,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_2.png',
     imageName: 'execution_2.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202efef34r3433',
@@ -255,7 +257,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_3.png',
     imageName: 'execution_3.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202efef3434ffs1',
@@ -264,7 +267,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_4.png',
     imageName: 'execution_4.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202efef3vsvsdvs21',
@@ -273,7 +277,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_5.png',
     imageName: 'execution_5.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202egeri3049gj',
@@ -282,7 +287,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_6.png',
     imageName: 'execution_6.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202efe4kfge90jbdk',
@@ -291,7 +297,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_7.png',
     imageName: 'execution_7.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202efef3rf98vdn',
@@ -300,7 +307,8 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_8.png',
     imageName: 'execution_8.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
   },
   {
     id: 'ox3202einrrerferf8vdn',
@@ -309,6 +317,100 @@ export const executions: Array<ExecutionType> = [
     count: 10,
     imagePath: '/images/dummy/executions/execution_9.png',
     imageName: 'execution_9.png',
-    status: 'success'
+    status: 'success',
+    date: new Date(),
+  },
+];
+
+export const histories: Array<ExecutionType> = [
+  {
+    id: 'ox3202efef34r21',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_1.png',
+    imageName: 'execution_1.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202efef34r21232323',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_2.png',
+    imageName: 'execution_2.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202efef34r3433',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_3.png',
+    imageName: 'execution_3.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202efef3434ffs1',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_4.png',
+    imageName: 'execution_4.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202efef3vsvsdvs21',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_5.png',
+    imageName: 'execution_5.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202egeri3049gj',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_6.png',
+    imageName: 'execution_6.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202efe4kfge90jbdk',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_7.png',
+    imageName: 'execution_7.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202efef3rf98vdn',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_8.png',
+    imageName: 'execution_8.png',
+    status: 'success',
+    date: new Date(),
+  },
+  {
+    id: 'ox3202einrrerferf8vdn',
+    account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
+    challengeId: '9209sdvsdv',
+    count: 10,
+    imagePath: '/images/dummy/my-histories/my_execution_9.png',
+    imageName: 'execution_9.png',
+    status: 'success',
+    date: new Date(),
   },
 ];

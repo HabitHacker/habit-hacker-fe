@@ -64,7 +64,7 @@ export default function Verify(
         background={color.background.layer1}
       />
       <Box pt={16} position="relative" display="flex" flexDirection="column" flex={1} background={color.background.layer1}>
-        <ChallengeInfo {...challenge} depositsVisible p="12px 20px 28px 20px" />
+        <ChallengeInfo {...challenge} depositsVisible p="12px 20px 28px 20px" bgColor={color.background.layer1}/>
         <Box p="27px 20px 32px 20px" bg={color.white}>
           <Box>
             <Box display="flex" alignItems="center">

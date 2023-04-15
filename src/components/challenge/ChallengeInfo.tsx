@@ -29,7 +29,7 @@ export default function ChallengeInfo({
   ...rest
 }: ChallengeType & BoxProps & { depositsVisible?: boolean }) {
   return (
-    <Box display="flex" {...rest} bgColor={color.white}>
+    <Box display="flex" {...rest} bgColor={rest.bgColor || color.white}>
       <Box position="relative" width="106px" height="106px" borderRadius="15px" overflow="hidden">
         <Image alt={title} src={image} fill sizes="100% auto" objectFit="cover" />
       </Box>

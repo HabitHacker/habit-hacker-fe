@@ -34,6 +34,7 @@ export type ExecutionType = {
   imagePath: string;
   imageName: string;
   status: ImageUploadStatus;
+  date: Date;
 };
 
 export type ImageUploadStatus = 'none'|'uploading'|'success'|'pending'|'rejected';
