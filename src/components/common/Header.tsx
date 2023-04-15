@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 import { useAccount, useConnect } from "wagmi";
 import { InjectedConnector } from 'wagmi/connectors/injected';
-import HamburgerIcon from 'public/icons/ico-hamburger.svg';
 import ChevronIcon from 'public/icons/ico-chevron-left.svg';
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -45,25 +44,35 @@ export default function Header({
       alignItems="center"
       bg={background}
     >
-      <Box as="nav">
-        {isHome ? 
-          <HamburgerIcon/> : 
-          <ChevronIcon 
-            onClick={() => { 
-              if (returnUrl === null) {
-                router.back();
-              } else {
-                router.push(returnUrl);
-              }
-            }} 
+      {isHome ? (
+        <Box as="nav">
+          <Image
+            alt="habit hacker"
+            src="/images/img-logo.svg"
+            width={140}
+            height={24}
           />
-        }
-      </Box>
-      <Box as="nav" ml="12px">
-        <Text fontWeight="700" fontSize="18px" lineHeight="22px">
-          {title} 
-        </Text>
-      </Box>
+        </Box>
+      ) : (
+        <>
+          <Box as="nav">
+            <ChevronIcon 
+              onClick={() => { 
+                if (returnUrl === null) {
+                  router.back();
+                } else {
+                  router.push(returnUrl);
+                }
+              }} 
+            />
+          </Box>
+          <Box as="nav" ml="12px">
+            <Text fontWeight="700" fontSize="18px" lineHeight="22px">
+              {title} 
+            </Text>
+          </Box>
+        </>
+      )}
       <Box as="nav" ml="auto">
         {isConnected ? (
           <Box 

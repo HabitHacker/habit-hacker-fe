@@ -1,5 +1,5 @@
 import { Box, Text, Textarea } from "@chakra-ui/react";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Button } from "../common";
 import { color } from "../styles/colors";
 
