@@ -7,15 +7,15 @@ import { ChallengeInfo, Executions, ImageUpload } from 'src/components/challenge
 import { color } from 'src/components/styles/colors';
 import { challengeList } from 'src/dummyData';
 import uploadImage from 'src/utils/uploadImage';
-import { useAccount } from 'wagmi';
 import { PrismaClient } from '@prisma/client';
+import { useMetaMask } from 'src/hooks/useMetaMask';
 
 export default function Verify({ executions }) {
   const router = useRouter();
   const { id } = router.query;
   const [execution, setExecution] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const { address } = useAccount();
+  const { account } = useMetaMask();
 
   const challenge = challengeList.find(x => x.id === id);
 
@@ -30,7 +30,7 @@ export default function Verify({ executions }) {
           body: JSON.stringify({
             imagePath: img,
             imageName: file.name,
-            account: address,
+            account: account,
             challengeId: id,
             count: 0,
             status: 'pending'

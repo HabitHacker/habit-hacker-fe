@@ -54,9 +54,6 @@ export default function Key() {
           }
         } );
         renderer.render(scene, camera);
-      },  
-      (xhr) => {
-        console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
       },);
     }
   }, [canvasRef]);

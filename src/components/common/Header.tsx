@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-import { useAccount, useConnect } from "wagmi";
-import { InjectedConnector } from 'wagmi/connectors/injected';
 import ChevronIcon from 'public/icons/ico-chevron-left.svg';
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Button from "./Button";
+import MetaMaskSDK from '@metamask/sdk';
+import { useMetaMask } from "src/hooks/useMetaMask";
 
 interface Props {
   title: string;
@@ -21,13 +21,12 @@ export default function Header({
   background="#fff"
 }: Props) {
   const router = useRouter();
+  const { isConnected, connect, account } = useMetaMask();
 
-  const { address, isConnected } = useAccount();
-  const { connect } = useConnect({
-    connector: new InjectedConnector(),
-  });
-
-  const handleConnectWallet = () => connect();
+  const handleConnectWallet = () => {
+    connect();
+  };
+  // console.log(account)
   return (
     <Box
       as="header"
