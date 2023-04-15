@@ -3,13 +3,7 @@ import MetaMaskSDK from '@metamask/sdk';
 
 export function useMetaMask() {
   const [account, setAccount] = useState(null);
-  const isConnected = useMemo(() => {
-    if (typeof window === 'undefined') return;
-    const MMSDK = new MetaMaskSDK();
-    const ethereum = MMSDK.getProvider(); 
-
-    return ethereum.isConnected();
-  }, []);
+  const [isConnected, setIsConnected] = useState(false);
 
   const connect = (callback?: () => void) => {
     if (typeof window === 'undefined') return;
@@ -34,13 +28,14 @@ export function useMetaMask() {
     .catch((err) => {
       console.error(err);
     });
-    ethereum.on('accountsChanged', handleAccountsChanged)
+    ethereum.on('accountsChanged', handleAccountsChanged);
 
     function handleAccountsChanged(accounts) {
       let val = null;
       if (accounts.length === 0) {
-        alert('Please connect to MetaMask.');
+        console.log('Please connect to MetaMask.');
       } else if (accounts[0] !== currentAccount) {
+        setIsConnected(true);
         setAccount(accounts[0]);
       }
       return val;
