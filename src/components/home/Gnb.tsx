@@ -6,7 +6,7 @@ import { color } from "../styles/colors";
 import CloseIcon from 'public/icons/ico-x.svg';
 
 const categories = [
-  { label: 'Foryou', value: 'my-challenges' },
+  { label: 'Foryou', value: 'foryou' },
   { label: 'Study', value: 'study' },
   { label: 'Exercise', value: 'exercise' },
   { label: 'Eating habits', value: 'eating-habits' },
@@ -19,11 +19,7 @@ export default function Gnb() {
   const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const handleSelectCategory = (val) => {
-    if (val === 'my-challenges') {
-      router.push('/my-challenges');
-    } else {
-      router.push({ query: { category: val } });
-    }
+    router.push({ query: { category: val } });
     setIsModalOpen(false);
   };
   return (
