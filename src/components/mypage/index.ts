@@ -1,5 +1,5 @@
 import Tabs from "./Tabs";
-import NftList from "./NFTList";
+import NftList from "./NftList";
 import HabitsHistory from "./HabitsHistory";
 
 export { 
