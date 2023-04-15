@@ -13,12 +13,23 @@ export default function ChallengeInfo({
   image,
   startDate,
   endDate,
+  participants,
+  limit,
+  minDeposits,
+  maxDeposits,
+  average,
   hashtags,
+  timeLeft,
+  organizer,
+  description,
+  nfts,
+  background,
+  fontColor,
   depositsVisible=false,
   ...rest
 }: ChallengeType & BoxProps & { depositsVisible?: boolean }) {
   return (
-    <Box display="flex" {...rest}>
+    <Box display="flex" {...rest} bgColor={color.white}>
       <Box position="relative" width="106px" height="106px" borderRadius="15px" overflow="hidden">
         <Image alt={title} src={image} fill sizes="100% auto" objectFit="cover" />
       </Box>

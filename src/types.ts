@@ -23,6 +23,7 @@ export type ChallengeType = {
   }>;
   background: string;
   fontColor: string;
+  average: number;
 };
 
 export type ExecutionType = {

@@ -12,9 +12,15 @@ const background = {
   layer3: '#E0EFFF',
 };
 
+const main = {
+  lighter: '#A1D2FF',
+  light: '#7EC1FF'
+}
+
 export const color = {
   primary: '#3F93FF',
   secondary: '#49A8FF',
+  main,
   white: '#fff',
   text,
   background,
