@@ -1,11 +1,11 @@
 import { color } from "./components/styles/colors";
-import { ChallengeType, ExecutionType } from "./types";
+import { ChallengeType, ExecutionType, MypageHistoryType, NftType } from "./types";
 
 export const account = '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3';
 
 export const challengeList: Array<ChallengeType> = [
   {
-    id: '239290302e3',
+    id: '0x6gr239290302e3',
     deposit: 33.34,
     title: 'Jogging every morning',
     image: '/images/dummy/challenges/challenge_6.png',
@@ -42,7 +42,7 @@ export const challengeList: Array<ChallengeType> = [
     fontColor: '#FFFFFF',
   },
   {
-    id: '9209sdvsdv',
+    id: '0x6gr9209sdvsdv',
     deposit: 93,
     title: 'Read 10 pages every day',
     image: '/images/dummy/challenges/challenge_5.png',
@@ -79,7 +79,7 @@ export const challengeList: Array<ChallengeType> = [
     fontColor: color.primary,
   },
   {
-    id: 'sdf9023ier23',
+    id: '0x6grsdf9023ier23',
     deposit: 631.99,
     title: 'Working out every day',
     image: '/images/dummy/challenges/challenge_1.png',
@@ -116,7 +116,7 @@ export const challengeList: Array<ChallengeType> = [
     fontColor: '#FFFFFF',
   },
   {
-    id: '434902rj23i',
+    id: '0x6gr434902rj23i',
     deposit: 32.32,
     title: 'Waking up early in the morning',
     image: '/images/dummy/challenges/challenge_4.png',
@@ -153,7 +153,7 @@ export const challengeList: Array<ChallengeType> = [
     fontColor: color.primary,
   },
   {
-    id: '3290392rwf',
+    id: '0x6gr3290392rwf',
     deposit: 74.4,
     title: 'Using stairs instead of elevators',
     image: '/images/dummy/challenges/challenge_3.png',
@@ -190,7 +190,7 @@ export const challengeList: Array<ChallengeType> = [
     fontColor: '#FFFFFF',
   },
   {
-    id: '239290302e3',
+    id: '0x6gr23929v23riojfwe',
     deposit: 432.1,
     title: 'Read a magazine every day',
     image: '/images/dummy/challenges/challenge_2.png',
@@ -233,7 +233,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202efef34r21',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_1.png',
     imageName: 'execution_1.png',
@@ -243,7 +243,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202efef34r21232323',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_2.png',
     imageName: 'execution_2.png',
@@ -253,7 +253,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202efef34r3433',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_3.png',
     imageName: 'execution_3.png',
@@ -263,7 +263,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202efef3434ffs1',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_4.png',
     imageName: 'execution_4.png',
@@ -273,7 +273,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202efef3vsvsdvs21',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_5.png',
     imageName: 'execution_5.png',
@@ -283,7 +283,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202egeri3049gj',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_6.png',
     imageName: 'execution_6.png',
@@ -293,7 +293,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202efe4kfge90jbdk',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_7.png',
     imageName: 'execution_7.png',
@@ -303,7 +303,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202efef3rf98vdn',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_8.png',
     imageName: 'execution_8.png',
@@ -313,7 +313,7 @@ export const executions: Array<ExecutionType> = [
   {
     id: 'ox3202einrrerferf8vdn',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/executions/execution_9.png',
     imageName: 'execution_9.png',
@@ -326,7 +326,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202efef34r21',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_1.png',
     imageName: 'execution_1.png',
@@ -336,7 +336,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202efef34r21232323',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_2.png',
     imageName: 'execution_2.png',
@@ -346,7 +346,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202efef34r3433',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_3.png',
     imageName: 'execution_3.png',
@@ -356,7 +356,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202efef3434ffs1',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_4.png',
     imageName: 'execution_4.png',
@@ -366,7 +366,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202efef3vsvsdvs21',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_5.png',
     imageName: 'execution_5.png',
@@ -376,7 +376,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202egeri3049gj',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_6.png',
     imageName: 'execution_6.png',
@@ -386,7 +386,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202efe4kfge90jbdk',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_7.png',
     imageName: 'execution_7.png',
@@ -396,7 +396,7 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202efef3rf98vdn',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_8.png',
     imageName: 'execution_8.png',
@@ -406,11 +406,53 @@ export const histories: Array<ExecutionType> = [
   {
     id: 'ox3202einrrerferf8vdn',
     account: '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3',
-    challengeId: '9209sdvsdv',
+    challengeId: '0x6gr9209sdvsdv',
     count: 10,
     imagePath: '/images/dummy/my-histories/my_execution_9.png',
     imageName: 'execution_9.png',
     status: 'success',
     date: new Date(),
+  },
+];
+
+export const myNfts: Array<NftType> = [
+  {
+    hash: '0xfhfwiljfo32ughwke09vdjnSJHFK4343jkfjw',
+    image: '/images/dummy/my-nfts/my_nft_1.png'
+  },
+  {
+    hash: '0xfhfwiljfo32uJIOERJOWI3443343jkfjw',
+    image: '/images/dummy/my-nfts/my_nft_2.png'
+  },
+  {
+    hash: '0xfhfwivdklf983894jheuvdjnSJHFK4343jkfjw',
+    image: '/images/dummy/my-nfts/my_nft_3.png'
+  },
+  {
+    hash: '0xffnji34NJKVEV4343MKLCE434343mkleejw',
+    image: '/images/dummy/my-nfts/my_nft_4.png'
+  },
+  {
+    hash: '0xdvdbgfbjiomNJFK3434545443jkfjw',
+    image: '/images/dummy/my-nfts/my_nft_5.png'
+  },
+  {
+    hash: '0xfhfwiljfo32ughwke09vdfevev4343jkfjw',
+    image: '/images/dummy/my-nfts/my_nft_6.png'
+  },
+];
+
+export const mypageHistories: Array<MypageHistoryType> = [
+  {
+    challengeId: '0x6grsdf9023ier23',
+    balance: 26.7,
+  },
+  {
+    challengeId: '0x6gr3290392rwf',
+    balance: 73.23,
+  },
+  {
+    challengeId: '0x6gr239290302e3',
+    balance: 736.23,
   },
 ];

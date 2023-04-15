@@ -38,3 +38,13 @@ export type ExecutionType = {
 };
 
 export type ImageUploadStatus = 'none'|'uploading'|'success'|'pending'|'rejected';
+
+export type NftType = {
+  image: string;
+  hash: string;
+};
+
+export type MypageHistoryType = {
+  challengeId: string;
+  balance: number;
+}

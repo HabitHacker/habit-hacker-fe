@@ -51,6 +51,8 @@ export default function BottomGnb({ current }) {
       justifyContent="center"
       w="min(100vw, 500px)"
       bg={color.white}
+      boxShadow="0px 0px 18px rgba(0, 0, 0, 0.1)"
+      borderTop={`1px solid ${color.background.layer1}`}
     >
       {['List', 'Habits', 'Mypage'].map(x => (
         <Box

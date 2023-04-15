@@ -76,6 +76,7 @@ export default function Header({
           <Box 
             as="button" 
             type="button"
+            onClick={() => router.push('/mypage')}
             position="relative" 
             borderRadius="99px" 
             width="36px" 
