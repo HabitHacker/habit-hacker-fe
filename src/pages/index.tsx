@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import { color } from 'src/components/styles/colors';
-import { useAccount } from 'wagmi';
+import { useMetaMask } from 'src/hooks/useMetaMask';
 
 export default function Splash() {
   const router = useRouter();
-  const { isConnected } = useAccount();
+  const { isConnected } = useMetaMask();
   useEffect(() => {
     setTimeout(() => {
       let path = '/connect';

@@ -2,23 +2,21 @@ import { Box, Text } from '@chakra-ui/react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { Key } from 'src/components/3d-model';
 import { Button } from 'src/components/common';
 import { Intro } from 'src/components/connect';
 import { color } from 'src/components/styles/colors';
-import { useConnect } from 'wagmi';
-import { InjectedConnector } from 'wagmi/connectors/injected';
+import MetaMaskSDK from '@metamask/sdk';
+import { useMetaMask } from 'src/hooks/useMetaMask';
 
 export default function Connect() {
   const router = useRouter();
-  const { connect } = useConnect({
-    connector: new InjectedConnector(),
-    onSuccess: () => {
-      router.push('/challenges');
-    },
-  });
+  const { connect } = useMetaMask();
 
-  const handleConnectWallet = () => connect();
+  const handleConnectWallet = () => {
+    connect(() => {
+      router.push('/challenges');
+    })
+  };
   return (
     <>
       <Head>
