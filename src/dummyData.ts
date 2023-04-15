@@ -1,3 +1,4 @@
+import { color } from "./components/styles/colors";
 import { ChallengeType, ExecutionType } from "./types";
 
 export const account = '0xfs312a2f3E829C0b614566B3E152e417d14q6EP3';
@@ -17,6 +18,27 @@ export const challengeList: Array<ChallengeType> = [
       'weekdays'
     ],
     timeLeft: 1000000000,
+    organizer: {
+      name: "NIKE",
+      image: "/images/dummy/organizer.svg"
+    },
+    description: "Hello, we are Nike! Are you ready to work out passionately with Nike for two weeks? Confirm your daily exercise and receive a prize and an RTKFT NFT in two weeks! This is the perfect opportunity to develop a healthy exercise habit with Nike!",
+    nfts: [
+      {
+        title: 'An Ardent Activist',
+        image: '/images/dummy/nfts/nft_1.png',
+        description: 'Achieved 5 times of\nexercise challenge'
+      },
+      {
+        title: 'rtfkt',
+        image: '/images/dummy/nfts/nft_2.png',
+        description: 'We\'ll pick 500 people\nwho succeed in this challenge\nand give them rtfkt nft'
+      },
+    ],
+    minDeposits: 0.04,
+    maxDeposits: 1000,
+    background: '#32371F',
+    fontColor: '#FFFFFF',
   },
   {
     id: '9209sdvsdv',
@@ -32,9 +54,30 @@ export const challengeList: Array<ChallengeType> = [
       'weekdays'
     ],
     timeLeft: 1000000000,
+    organizer: {
+      name: "NIKE",
+      image: "/images/dummy/organizer.svg"
+    },
+    description: "Hello, we are Nike! Are you ready to work out passionately with Nike for two weeks? Confirm your daily exercise and receive a prize and an RTKFT NFT in two weeks! This is the perfect opportunity to develop a healthy exercise habit with Nike!",
+    nfts: [
+      {
+        title: 'An Ardent Activist',
+        image: '/images/dummy/nfts/nft_1.png',
+        description: 'Achieved 5 times of\nexercise challenge'
+      },
+      {
+        title: 'rtfkt',
+        image: '/images/dummy/nfts/nft_2.png',
+        description: 'We\'ll pick 500 people\nwho succeed in this challenge\nand give them rtfkt nft'
+      },
+    ],
+    minDeposits: 0.04,
+    maxDeposits: 1000,
+    background: '#E8DDD5',
+    fontColor: color.primary,
   },
   {
-    id: '9209sdvsdv',
+    id: 'sdf9023ier23',
     deposit: 631.99,
     title: 'Working out every day',
     image: '/images/dummy/challenges/challenge_1.png',
@@ -47,6 +90,27 @@ export const challengeList: Array<ChallengeType> = [
       'weekdays'
     ],
     timeLeft: 1000000000,
+    organizer: {
+      name: "NIKE",
+      image: "/images/dummy/organizer.svg"
+    },
+    description: "Hello, we are Nike! Are you ready to work out passionately with Nike for two weeks? Confirm your daily exercise and receive a prize and an RTKFT NFT in two weeks! This is the perfect opportunity to develop a healthy exercise habit with Nike!",
+    nfts: [
+      {
+        title: 'An Ardent Activist',
+        image: '/images/dummy/nfts/nft_1.png',
+        description: 'Achieved 5 times of\nexercise challenge'
+      },
+      {
+        title: 'rtfkt',
+        image: '/images/dummy/nfts/nft_2.png',
+        description: 'We\'ll pick 500 people\nwho succeed in this challenge\nand give them rtfkt nft'
+      },
+    ],
+    minDeposits: 0.04,
+    maxDeposits: 1000,
+    background: '#1D1D1D',
+    fontColor: '#FFFFFF',
   },
   {
     id: '434902rj23i',
@@ -62,6 +126,27 @@ export const challengeList: Array<ChallengeType> = [
       'weekdays'
     ],
     timeLeft: 1000000000,
+    organizer: {
+      name: "NIKE",
+      image: "/images/dummy/organizer.svg"
+    },
+    description: "Hello, we are Nike! Are you ready to work out passionately with Nike for two weeks? Confirm your daily exercise and receive a prize and an RTKFT NFT in two weeks! This is the perfect opportunity to develop a healthy exercise habit with Nike!",
+    nfts: [
+      {
+        title: 'An Ardent Activist',
+        image: '/images/dummy/nfts/nft_1.png',
+        description: 'Achieved 5 times of\nexercise challenge'
+      },
+      {
+        title: 'rtfkt',
+        image: '/images/dummy/nfts/nft_2.png',
+        description: 'We\'ll pick 500 people\nwho succeed in this challenge\nand give them rtfkt nft'
+      },
+    ],
+    minDeposits: 0.04,
+    maxDeposits: 1000,
+    background: '#1D1D1D',
+    fontColor: color.primary,
   },
   {
     id: '3290392rwf',
@@ -77,6 +162,27 @@ export const challengeList: Array<ChallengeType> = [
       'weekdays'
     ],
     timeLeft: 1000000000,
+    organizer: {
+      name: "NIKE",
+      image: "/images/dummy/organizer.svg"
+    },
+    description: "Hello, we are Nike! Are you ready to work out passionately with Nike for two weeks? Confirm your daily exercise and receive a prize and an RTKFT NFT in two weeks! This is the perfect opportunity to develop a healthy exercise habit with Nike!",
+    nfts: [
+      {
+        title: 'An Ardent Activist',
+        image: '/images/dummy/nfts/nft_1.png',
+        description: 'Achieved 5 times of\nexercise challenge'
+      },
+      {
+        title: 'rtfkt',
+        image: '/images/dummy/nfts/nft_2.png',
+        description: 'We\'ll pick 500 people\nwho succeed in this challenge\nand give them rtfkt nft'
+      },
+    ],
+    minDeposits: 0.04,
+    maxDeposits: 1000,
+    background: '#5F5F5F',
+    fontColor: '#FFFFFF',
   },
   {
     id: '239290302e3',
@@ -92,6 +198,27 @@ export const challengeList: Array<ChallengeType> = [
       'weekdays'
     ],
     timeLeft: 1000000000,
+    organizer: {
+      name: "NIKE",
+      image: "/images/dummy/organizer.svg"
+    },
+    description: "Hello, we are Nike! Are you ready to work out passionately with Nike for two weeks? Confirm your daily exercise and receive a prize and an RTKFT NFT in two weeks! This is the perfect opportunity to develop a healthy exercise habit with Nike!",
+    nfts: [
+      {
+        title: 'An Ardent Activist',
+        image: '/images/dummy/nfts/nft_1.png',
+        description: 'Achieved 5 times of\nexercise challenge'
+      },
+      {
+        title: 'rtfkt',
+        image: '/images/dummy/nfts/nft_2.png',
+        description: 'We\'ll pick 500 people\nwho succeed in this challenge\nand give them rtfkt nft'
+      },
+    ],
+    minDeposits: 0.04,
+    maxDeposits: 1000,
+    background: '#8A9298',
+    fontColor: '#FFFFFF',
   },
 ];
 

@@ -7,7 +7,7 @@ import React from "react";
 import { Header, Button } from "src/components/common";
 import { color } from "src/components/styles/colors";
 import { challengeList } from "src/dummyData";
-import LinkIcon from 'public/icons/ico-link.svg';
+import EtherIcon from 'public/icons/ico-eth.svg';
 import ParticipantIcon from 'public/icons/ico-participant.svg';
 
 export default function Challenge() {
@@ -25,13 +25,13 @@ export default function Challenge() {
         title="Participating"
         returnUrl="/challenges"
       />
-      <Box mt={16} position="relative" display="flex" flexDirection="column" flex={1} bg={color.background.layer3}>
+      <Box mt={16} position="relative" display="flex" flexDirection="column" flex={1} bg={challenge.background}>
         <Box 
           position="absolute"
           top="0"
           pt="100%" 
           w="100%"
-          backgroundImage={`linear-gradient(transparent 60%, ${color.background.layer3} 100%), url(${challenge.image})`}
+          backgroundImage={`linear-gradient(transparent 60%, ${challenge.background} 100%), url(${challenge.image})`}
           backgroundSize="cover"
           backgroundPosition="center"
         />
@@ -90,7 +90,7 @@ export default function Challenge() {
                 Deposits
               </Text>
               <Box mt="16px" display="flex" alignItems="center">
-                <LinkIcon />
+                <EtherIcon />
                 <Text ml="9px" fontWeight={800} fontSize="22px" lineHeight="1" color={color.text.secondary}>
                   {challenge.deposit}
                 </Text>
@@ -122,11 +122,12 @@ export default function Challenge() {
           </Button>
           <Box 
             as="a" 
-            color={color.primary}
+            href={`/challenge/${id}/detail`}
+            color={challenge.fontColor}
             fontWeight="600"
             fontSize="17px"
             lineHeight="21px"
-            borderBottom={`2px solid ${color.primary}`}
+            borderBottom={`2px solid ${challenge.fontColor}`}
           >
             Read More
           </Box>

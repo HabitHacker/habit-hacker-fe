@@ -7,8 +7,22 @@ export type ChallengeType = {
   endDate: Date;
   participants: number;
   limit: number;
+  minDeposits: number;
+  maxDeposits: number;
   hashtags: Array<string>;
   timeLeft: number;
+  organizer: {
+    name: string;
+    image: string;
+  };
+  description: string;
+  nfts: Array<{
+    title: string;
+    image: string;
+    description: string;
+  }>;
+  background: string;
+  fontColor: string;
 };
 
 export type ExecutionType = {
